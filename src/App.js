@@ -59,7 +59,7 @@ function App() {
         duration="m"
         alt="100px"
         currency="$"
-        buttonContent="Ordenar Ahora"
+        buttonContent="Ordena Hoy"
         subTitle="+ 1000mbps"
         priceText="Servicio de fibra ULTRA"
         headerText="Mayor Ahorro"

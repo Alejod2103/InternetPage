@@ -12,12 +12,24 @@ export const ContactContainer = styled.div`
   @media (max-width: 820px) {
     margin: 40px 0;
   }
+
+  @media (min-width: 300px) and (max-width: 600px){
+  
+    width: 290px;
+      left: 20px;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: 300px) and (max-width: 600px){
+      flex-direction: column-reverse;
+            
+  }
+
 `;
 
 export const LeftSide = styled.div`
@@ -38,6 +50,10 @@ export const LeftSide = styled.div`
         top: 50%;
         transform: translateY(-50%);
         background: #afafb6;
+    }
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        flex-direction: column
     }
 `;
 
@@ -69,6 +85,10 @@ export const TextTwo = styled.div`
 export const RightSide = styled.div`
     width: 75%;
     margin-left: 75px;
+
+    @media (min-width: 300px) and (max-width: 600px){
+        margin-left: 20px;
+    }
 `;
 
 export const TopicText = styled.div`
@@ -82,6 +102,10 @@ export const InputBox = styled.div`
     width: 100%;
     color: #000;
     margin: 12px 0;
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        margin: 12px 0;
+    }
 `;
 
 export const InputText = styled.input`

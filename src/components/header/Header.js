@@ -26,7 +26,7 @@ const Header = () => {
             Disfruta el mejor servicio de internet mediante fibra optica al precio ideal para ti
           </p>
           <div className="header-cta">
-            <Button text={"Llama Hoy"} btnClass={"btn-dark"} href={"#"} />
+            <Button text={"Llama Hoy"} btnClass={"btn-dark"} href="tel:1 (804) 298-1272" />
             <Button text={"¿Por que fibra?"} btnClass={"btn-light"} href={"/features"} />
           </div>
         </div>

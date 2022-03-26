@@ -9,6 +9,14 @@
     max-width: 400px;
     z-index: 1;
     border: none;
+    border-radius: 6px;
+  }
+
+  @media (min-width:300px) and (max-width: 600px) {
+    .search{
+      left: 70px;
+      border-radius: 6px;
+    }
   }
 
   .pac-container{
