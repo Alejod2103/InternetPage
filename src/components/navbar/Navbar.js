@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="logo">
         <SiAnaconda color="#fff" size={33} />
         <p className="logo-text">
-          Social<span>X</span>
+          Internet<span>Latino</span>
         </p>
       </div>
       <menu>
@@ -27,25 +27,26 @@ const Navbar = () => {
           id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
         >
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#features">Features</a>
+            <a href="/features">¿Por que escogernos?</a>
+          </li>
+          {/*
+          <li>
+            <a href="/download">Download</a>
           </li>
           <li>
-            <a href="#download">Download</a>
+            <a href="/subscribe">Subscribe</a>
           </li>
-          <li>
-            <a href="#subscribe">Subscribe</a>
-          </li>
-
+          */}
           {/* <li>
             <a href="#" className="btn btn-dark">
               Get Started
             </a>
           </li> */}
           <li className="nav-btn">
-            <Button text={"Learn More"} btnClass={"btn-dark"} href={"#faq"} />
+            <Button text={"Llamar Ahora"} btnClass={"btn-dark"} href={"/faq"} />
           </li>
         </ul>
       </menu>

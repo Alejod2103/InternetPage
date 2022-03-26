@@ -1,6 +1,5 @@
 import React from "react";
 import "./Feature.css";
-import { FaAccessibleIcon } from "react-icons/fa";
 import { BsHexagon } from "react-icons/bs";
 
 const Feature = ({ icon, heading, text }) => {

@@ -22,7 +22,7 @@ a.btn-dark {
   border: 2px solid #fff;
 }
 a.btn-light {
-  background: orangered;
+  background: rgb(255, 69, 0);
   border: 2px solid transparent;
   color: #fff;
 }

@@ -19,18 +19,15 @@ const Header = () => {
       <div className="container header">
         <div className="header-left" data-aos="fade-right">
           <h1>
-            <span>The world's leading</span>
-            <span>cross-platform secure</span>
-            <span>messaging system</span>
+            <span>El mejor servicio de Internet</span>
+            <span> la mejor velocidad de internet gracias a la fibra optica</span>
           </h1>
           <p className="u-text-small">
-            SocialX is a Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Obcaecati ea aliquam sit nemo nisi! Nesciunt quis illum id qui
-            et!
+            Disfruta el mejor servicio de internet mediante fibra optica al precio ideal para ti
           </p>
           <div className="header-cta">
-            <Button text={"Get Started"} btnClass={"btn-dark"} href={"#"} />
-            <Button text={"How It Works"} btnClass={"btn-light"} href={"#"} />
+            <Button text={"Llama Hoy"} btnClass={"btn-dark"} href={"#"} />
+            <Button text={"¿Por que fibra?"} btnClass={"btn-light"} href={"/features"} />
           </div>
         </div>
         <div className="header-right" data-aos="fade-left">

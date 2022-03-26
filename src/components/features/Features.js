@@ -19,10 +19,9 @@ const Features = () => {
       <div className="container features">
         <div className="title" data-aos="fade-up">
           <BsFillBookmarkStarFill color="orangered" size={30} />
-          <h2>Core Features</h2>
+          <h2>Servicio de Internet</h2>
           <p className="u-text-small">
-            SocialX app has Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Sequi labore, harum officiis error quia cupiditate?
+             Soprendete con la velocidad y calidad de servicio que solo la fibra optica te brinda, al precio ideal para ti
           </p>
         </div>
         <div className="features-content">

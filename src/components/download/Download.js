@@ -15,9 +15,9 @@ const Download = () => {
   return (
     <section id="download">
       <div className="container download" data-aos="fade-up">
-        <h2>SocialX messenger download</h2>
+        <h2>Compatible en todas las platafomas</h2>
         <p className="u-text-small">
-          Our apps are available for download on all stores.
+          Disfruta de Stream Play TV en todos tus dispositivos
         </p>
         <IconContext.Provider value={{ size: "15" }}>
           <div className="download-icons">

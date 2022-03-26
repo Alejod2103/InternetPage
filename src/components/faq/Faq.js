@@ -17,11 +17,9 @@ const Faq = () => {
       <div className="container faq">
         <div className="u-title" data-aos="fade-up">
           <MdOutlineLibraryBooks color="orangered" size={30} />
-          <h2>FAQs</h2>
+          <h2>Preguntas Frecuentes</h2>
           <p className="u-text-small">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
-            itaque veniam laudantium, quam quas dolor tempora eligendi officia
-            sequi. Iusto.
+            
           </p>
         </div>
         <div className="questions">
