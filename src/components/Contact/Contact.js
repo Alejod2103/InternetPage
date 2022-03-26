@@ -93,7 +93,7 @@ function Contact() {
 
                     <SubmitContainer>
 
-                    <Button onSubmit={handleSubmit}></Button>
+                    <Button onSubmit={handleSubmit}><h3>Enviar</h3></Button>
 
                     </SubmitContainer>
 

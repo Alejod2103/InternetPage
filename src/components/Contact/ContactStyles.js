@@ -13,9 +13,9 @@ export const ContactContainer = styled.div`
     margin: 40px 0;
   }
 
-  @media (min-width: 300px) and (max-width: 600px){
-  
-    width: 290px;
+  @media (min-width: 300px) and (max-width: 800px){
+      flex-direction: column-reverse;
+      width: 90%;
       left: 20px;
   }
 `;
@@ -29,7 +29,6 @@ export const Content = styled.div`
       flex-direction: column-reverse;
             
   }
-
 `;
 
 export const LeftSide = styled.div`
@@ -53,7 +52,7 @@ export const LeftSide = styled.div`
     }
 
     @media (min-width: 300px) and (max-width: 600px) {
-        flex-direction: column
+        flex-direction: column-reverse;
     }
 `;
 
@@ -123,37 +122,20 @@ export const InputText = styled.input`
 
 export const SubmitContainer = styled.div`
     position: relative;
-    height: 20x;
-    width: 20x;
-    background-color: yellow;
+    height: 40px;
+    width: 90px;
     color: #fff;
 `;
 
-export const Button = styled.button`
-    pointer-events: auto;
-	cursor: pointer;
-	background: #e7e7e7;
-	border: none;
-	padding: 1.5rem 3rem;
-	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	position: relative;
-	display: inline-block;
+export const Button = styled.a`
+    background: rgb(255, 69, 0);
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    border-radius: 30px;
+    transition: transform;
 
-    ::before{
-        position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-    }
-
-    ::after{
-        position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    h3{
+        margin-left: 11px;
     }
 `;
