@@ -18,6 +18,7 @@ const Header = () => {
     <section id="header">
       <div className="container header">
         <div className="header-left" data-aos="fade-right">
+        <h1>(804) 298-1272</h1>
           <h1>
             <span>El mejor servicio de Internet</span>
             <span> la mejor velocidad de internet gracias a la fibra optica</span>

@@ -29,6 +29,10 @@ code {
     margin: 0;
     padding: 0;
   }
+
+  .btnNo{
+    display: none;
+  }
   
   .search {
     position: absolute;

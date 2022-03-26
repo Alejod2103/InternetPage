@@ -115,8 +115,14 @@ export const Button = styled.a`
     background: rgb(255, 69, 0);
     position: absolute;
     color: #fff;
+    z-index: 1;
     width: 100%;
+    cursor: pointer;
     border-radius: 30px; 
+    :hover {
+        background-color: #fff;
+        color: rgb(255, 69, 0);
+    }
 
     h3{
         margin-left: 11px;

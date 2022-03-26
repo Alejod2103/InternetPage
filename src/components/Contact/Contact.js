@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ContactContainer,
          Content,
          LeftSide,
@@ -17,35 +17,25 @@ import { ContactContainer,
 import { FiMail } from 'react-icons/fi'
 import { RiPhoneLine } from 'react-icons/ri';
 import AutoComplete from './AutoComplete/AutoComplete.js';
-import { db } from "../../firebase.js"
+import emailjs from 'emailjs-com';
+
+
+
 
 function Contact() {
-    const [name, setName] = useState("");
-    const [num, setNum] = useState("");
-    const [correo, setCorreo] = useState("");
 
-    const [ setLoader] = useState(false)
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoader(true);
-
-    db.collection("contacts").add({
-      name: name,
-      email: correo,
-      num: num,
-    })
-    .then(() => {
-      setLoader(false);
-      alert("Su admision a sido enviada, un Agente se pondra en contacto contigo a la brevedad posible")
-    })
-    .catch((error) => {
-      alert(error.message);
-      setLoader(false)
-    })
-
-    setName('')
-    setNum('')
-    setCorreo('')
+  const sendEmail = (e) =>
+  
+  {
+    e.preventDefault();    
+  
+      emailjs.sendForm('service_6ph5kjv', 'template_rbiqdhe', e.value, 'RxPi0B8jcUAP2RxSS')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
   }
   return (
     <ContactContainer>
@@ -74,25 +64,25 @@ function Contact() {
                   Contactanos
                 </TopicText>
                 <p>Agenda una cita y nos pondremos en contacto contigo a la brevedad.</p>
-                  <form action="">
-                    <InputBox className='input-box' id='contactName'>
-                        <InputText placeholder='Nombre' />
+                  <form onsubmit={sendEmail}>
+                    <InputBox className='input-box' >
+                        <InputText placeholder='Nombre' name='name' />
                     </InputBox>
 
-                    <InputBox className='input-box' id='contactPhone'>
-                        <InputText placeholder='Telefono' />
+                    <InputBox className='input-box' >
+                        <InputText placeholder='Telefono' name='phone' />
                     </InputBox>
 
-                    <InputBox className='input-box' id='contactEmail'>
-                    <InputText placeholder='Correo Electronico' />
+                    <InputBox className='input-box' >
+                    <InputText placeholder='Correo Electronico' name='email' />
                     </InputBox>
 
-                    <InputBox className='input-box' id='contactAddress'>
-                        <AutoComplete />
+                    <InputBox className='input-box' >
+                        <AutoComplete name='address' />
                     </InputBox>
 
                     <SubmitContainer>
-                      <Button onSubmit={handleSubmit}><h3>Enviar</h3></Button>
+                      <Button onSubmit={sendEmail}><h3>Enviar</h3></Button>
                     </SubmitContainer>
 
                   </form>
@@ -102,5 +92,4 @@ function Contact() {
     </ContactContainer>
   )
 }
-
-export default Contact
+export default Contact;
