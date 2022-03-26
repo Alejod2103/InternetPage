@@ -75,26 +75,24 @@ function Contact() {
                 </TopicText>
                 <p>Agenda una cita y nos pondremos en contacto contigo a la brevedad.</p>
                   <form action="">
-                    <InputBox className='input-box'>
+                    <InputBox className='input-box' id='contactName'>
                         <InputText placeholder='Nombre' />
                     </InputBox>
 
-                    <InputBox className='input-box'>
+                    <InputBox className='input-box' id='contactPhone'>
                         <InputText placeholder='Telefono' />
                     </InputBox>
 
-                    <InputBox className='input-box'>
+                    <InputBox className='input-box' id='contactEmail'>
                     <InputText placeholder='Correo Electronico' />
                     </InputBox>
 
-                    <InputBox className='input-box'>
+                    <InputBox className='input-box' id='contactAddress'>
                         <AutoComplete />
                     </InputBox>
 
                     <SubmitContainer>
-
-                    <Button onSubmit={handleSubmit}><h3>Enviar</h3></Button>
-
+                      <Button onSubmit={handleSubmit}><h3>Enviar</h3></Button>
                     </SubmitContainer>
 
                   </form>

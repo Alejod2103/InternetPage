@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContactContainer = styled.div`
   width: 1000px;
   position: relative;
-  left: 220px;
+  left: 15%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
@@ -32,29 +32,13 @@ export const Content = styled.div`
 `;
 
 export const LeftSide = styled.div`
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    position: relative;
-    ::before{
-        content: '';
-        position: absolute;
-        height: 70%;
-        width: 2px;
-        right: -15px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #afafb6;
-    }
+
+    
 
     @media (min-width: 300px) and (max-width: 600px) {
         flex-direction: column-reverse;
     }
-`;
+`
 
 export const Details = styled.div`
     margin: 14px;
@@ -132,8 +116,7 @@ export const Button = styled.a`
     position: absolute;
     color: #fff;
     width: 100%;
-    border-radius: 30px;
-    transition: transform;
+    border-radius: 30px; 
 
     h3{
         margin-left: 11px;
