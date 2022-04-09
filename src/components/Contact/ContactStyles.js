@@ -1,130 +1,78 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const ContactContainer = styled.div`
-  width: 1000px;
-  position: relative;
-  left: 15%;
-  background: #fff;
-  border-radius: 6px;
-  padding: 20px 60px 30px 40px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-
-  @media (max-width: 820px) {
-    margin: 40px 0;
-  }
-
-  @media (min-width: 300px) and (max-width: 800px){
-      flex-direction: column-reverse;
-      width: 90%;
-      left: 20px;
-  }
-`;
-
-export const Content = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (min-width: 300px) and (max-width: 600px){
-      flex-direction: column-reverse;
-            
-  }
-`;
-
-export const LeftSide = styled.div`
-
-    
-
-    @media (min-width: 300px) and (max-width: 600px) {
-        flex-direction: column-reverse;
-    }
-`
-
-export const Details = styled.div`
-    margin: 14px;
-    text-align: center;
-    i{
-        font-size: 30px;
-        color:  rgb(255, 69, 0);
-        margin-bottom: 10px;
-    }
-`;
-
-export const Topic = styled.div`
-    font-size: 18px;
-    font-weight: 500;
-`;
-
-export const TextOne = styled.div`
-    font-size: 14px;
-    color: #afafb6;
-`;
-
-export const TextTwo = styled.div`
-    font-size: 14px;
-    color: #afafb6;
-`;
-
-export const RightSide = styled.div`
-    width: 75%;
-    margin-left: 75px;
-
-    @media (min-width: 300px) and (max-width: 600px){
-        margin-left: 20px;
-    }
-`;
-
-export const TopicText = styled.div`
-    font-size: 23px;
-    font-weight: 600;
-    color:  rgb(255, 69, 0);
-`;
-
-export const InputBox = styled.div`
-    height: 50px;
-    width: 100%;
-    color: #000;
-    margin: 12px 0;
-
-    @media (min-width: 300px) and (max-width: 600px) {
-        margin: 12px 0;
-    }
-`;
-
-export const InputText = styled.input`
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    background-color: #F0F1F8;
-    border-radius: 6px;
-    color: #000;
-    padding: 0 15px;
-    resize: none;
-`;
-
-export const SubmitContainer = styled.div`
-    position: relative;
-    height: 40px;
-    width: 90px;
-    color: #fff;
-`;
-
-export const Button = styled.a`
-    background: rgb(255, 69, 0);
+export const ButtonStyled = styled.button`
     position: absolute;
-    color: #fff;
-    z-index: 1;
-    width: 100%;
+    margin-left: 160px;
+    bottom: 20px;
+    height: 40px;
+    width: 200px;
+    background-color: #4287f5;
+    outline: none;
+    border-radius: 25px;
     cursor: pointer;
-    border-radius: 30px; 
-    :hover {
-        background-color: #fff;
-        color: rgb(255, 69, 0);
+    h1{
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
     }
+    @media (min-width: 300px) and (max-width: 700px) {
+        margin-left: 30%;
+    }
+`;
 
-    h3{
-        margin-left: 11px;
+export const TextLeft = styled.h3`
+    font-size: 44px;
+    position: absolute;
+    left: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 40%;
+    letter-spacing: 1.5px;
+    top: 320px;
+    color: #fff;
+    @media (min-width: 300px) and (max-width: 700px) {
+        position: absolute;
+        font-size: 23px;
+        top: 220px;
+        width: 85%;
+        left: 25px;
+    }
+`;
+
+export const TextOne = styled.h1`
+  position: relative;
+  margin: 20px;
+  left: 135px;
+  width: 250px;
+  top: 15px;
+  color: #4287f5;
+  font: Roboto, sans;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 25px;
+  @media (min-width: 300px) and (max-width: 700px) {
+    left: 0;
+    display: flex;
+    width: 90%;
+    font-size: 16px;
+  }
+`;
+
+export const TextLeftTwo = styled.h3`
+    font-size: 24px;
+    position: absolute;
+    left: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 40%;
+    top: 285px;
+    color: #000;
+    @media (min-width: 300px) and (max-width: 700px){
+        position: absolute;
+        font-size: 17px;
+        top: 190px;
+        width: 245px;
+        left: 25px;
+        border-bottom: 1px solid #000;
     }
 `;

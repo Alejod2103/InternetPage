@@ -6,6 +6,7 @@ import "./App.css";
 // import Subscribe from "./components/subscribe/Subscribe";
 // import Footer from "./components/footer/Footer";
 import Pricing from "./components/Pricing/Pricing.js"
+import StreamPlayAd from "./components/streamPlayAd/StreamPlayAd";
 import Contact from "./components/Contact/Contact";
 import { FirstContainer } from "./components/Pricing/PricingStyles";
 
@@ -68,6 +69,7 @@ function App() {
       </FirstContainer>
       <Features data-aos="fade-up" />
       <Contact />
+      <StreamPlayAd />
       <Faq />
       <Footer />
     </>

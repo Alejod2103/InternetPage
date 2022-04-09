@@ -1,0 +1,12 @@
+.label{
+    color: gray;
+    font-size: 15px;
+}
+
+.textArea{
+    width: 100%;
+    border-bottom: 2px;
+    outline: none;
+    background-color: gray;
+    padding: 2px;
+}
